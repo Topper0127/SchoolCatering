@@ -1,2 +1,2 @@
 # SchoolCatering
-School Catering project with online payment solution
+Cashless Catering and Online Payment Solution
