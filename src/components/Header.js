@@ -1,24 +1,28 @@
 import React from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { BiLogOut } from "react-icons/bi";
 
 export default function Header () {
+  const router = useRouter();
+
   return (<>
     <div className="w-full h-auto flex flex-row justify-center items-baseline py-3 gap-[32px] bg-[#606b72]">
       <div className="grow-2 h-auto flex flex-col items-end">
         <div className="min-w-[1400px] w-auto h-auto mt-[40px] gap-[80px] flex flex-row items-baseline bg-[#606b72]">
-          <div className="grow-auto h-full text-[40px] text-white font-bold">
+          <Link href="/order" className="grow-auto h-full text-[40px] text-white font-bold">
             School Meals
-          </div>
+          </Link>
           <div className="grow-auto h-auto flex flex-row gap-[48px] items-baseline justify-between">
-            <div className="grow-auto h-auto text-white text-[20px]">
+            <Link href="/menu" className="grow-auto h-auto text-white text-[20px]">
               Menu
-            </div>
-            <div className="grow-auto h-auto text-white text-[20px]">
+            </Link>
+            <Link href="/dishes" className="grow-auto h-auto text-white text-[20px]">
               Dishes
-            </div>
-            <div className="grow-auto h-auto text-white text-[20px]">
+            </Link>
+            <Link href="/categories" className="grow-auto h-auto text-white text-[20px]">
               Categories
-            </div>
+            </Link>
             <div className="grow-auto h-auto text-white text-[20px]">
               Allergies
             </div>
@@ -28,9 +32,9 @@ export default function Header () {
             <div className="grow-auto h-auto text-white text-[20px]">
               Costs
             </div>
-            <div className="grow-auto h-auto text-white text-[20px]">
+            <Link href="/finance" className="grow-auto h-auto text-white text-[20px]">
               Finance
-            </div>
+            </Link>
           </div>
         </div>
         <div className="w-auto h-auto flex flex-row gap-[16px] text-[16px] items-baseline text-right">
