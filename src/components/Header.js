@@ -17,9 +17,9 @@ export default function Header () {
             <Link href="/menu" className="grow-auto h-auto text-white text-[20px]">
               Menu
             </Link>
-            <div className="grow-auto h-auto text-white text-[20px]">
+            <Link href="/dishes" className="grow-auto h-auto text-white text-[20px]">
               Dishes
-            </div>
+            </Link>
             <Link href="/categories" className="grow-auto h-auto text-white text-[20px]">
               Categories
             </Link>
